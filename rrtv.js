@@ -5,7 +5,7 @@
 # QuanX
 [rewrite_local]
 # 人人视频 旧版本api限制解除
-^https:\/\/api\.rr\.tv url script-request-header https://raw.githubusercontent.com/id77/QuantumultX/master/Script/rrtv.js
+^https:\/\/api\.rr\.tv url script-request-header https://raw.githubusercontent.com/GFBG-IT/rules/main/rrtv.js
 
 */
 
