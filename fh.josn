@@ -1,7 +1,12 @@
- "icon": "https://avatars2.githubusercontent.com/u/22700758?s=88&u=26d911ccb8345dac955238c2ed6c572892ef924a&v=4",	  "icon": "https://avatars2.githubusercontent.com/u/22700758?s=88&u=26d911ccb8345dac955238c2ed6c572892ef924a&v=4",
-  "repo": "https://github.com/whyour/hundun",	  "repo": "https://github.com/whyour/hundun",
-  "apps": [	  "apps": [
-    {	
+{
+  "id": "whyour.app.sub",
+  "name": "whyour应用订阅",
+  "author": "@whyour",
+  "icon": "https://avatars2.githubusercontent.com/u/22700758?s=88&u=26d911ccb8345dac955238c2ed6c572892ef924a&v=4",
+  "repo": "https://github.com/whyour/hundun",
+  "apps": [
+    {
+      {	
       "id": "shareCode",	
       "name": "互助码",	
       "keys": [	
@@ -95,4 +100,5 @@
         "https://raw.githubusercontent.com/58xinian/icon/master/jdnc_mini.png",	
         "https://raw.githubusercontent.com/58xinian/icon/master/jdnc.png"	
       ]	
-    },
+  ]
+}
