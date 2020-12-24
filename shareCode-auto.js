@@ -62,6 +62,7 @@ $.random = Math.floor(Math.random() * 60);
         `https://code.chiang.fun/api/v1/jd/jdzz/create/${jdzz}/`,
         "京东赚赚"
       ));
+     await $.wait($.random);
     jdcj &&
       (await create(
         `https://code.chiang.fun/api/v1/jd/jdcrazyjoy/create/${jdcj}/`,
