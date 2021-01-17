@@ -1,20 +1,10 @@
 const $ = new Env("互助码");
 const shareCodes = [
   {
-    zd: $.getdata("zd_shareCode1") || "4npkonnsy7xi2fkgmi5rawcmscmy45bifeqhdua",
-    nc: $.getdata("nc_shareCode1") || "00e4a805dba14fe698fbff26c2b5f604",
-    mc: $.getdata("mc_shareCode1") || "MTE1NDAxNzcwMDAwMDAwMzkwNjg0ODk=",
-    ddgc: $.getdata("dd_shareCode1") || "P04z54XCjVWnYaS5m9cZ2epiH4Zl-imHc2NjWY",
-    jxgc: $.getdata("jx_shareCode1") || "W1SbH543XnkI83f7x-RLWA==",
     jdzz: $.getdata("zz_shareCode1") || "AUWE5mPzFz2YKDmn5jigcwA",
     jdcj: $.getdata("cj_shareCode1") || "0nKKG-tWFHLmF70y11l3T6t9zd5YaBeE",
   },
   {
-    zd: $.getdata("zd_shareCode2") || "mlrdw3aw26j3wqzpllleo2jfuua34qsrcfjec7y",
-    nc: $.getdata("nc_shareCode2") || "b7c855583e034487b96dd42d8136740d",
-    mc: $.getdata("mc_shareCode2") || "MTAxODExNDYxMTEwMDAwMDAwNDAyMDkyMDk=",
-    ddgc: $.getdata("dd_shareCode2") || "P04z54XCjVWnYaS5m9cZ2X-jnVNw82pwe1dtY4",
-    jxgc: $.getdata("jx_shareCode2") || "_RxVU8oS4EOjRLaHS2I3xg==",
     jdzz: $.getdata("zz_shareCode2") || "AUWE5mqvDxDJeWjOr23hMlg",
     jdcj: $.getdata("cj_shareCode1") || "QXxh-r8pf1eKrzfEgAnQpKt9zd5YaBeE",
   },
@@ -25,37 +15,7 @@ $.random = Math.floor(Math.random() * 60);
 !(async () => {
   console.log(`\n此脚本延迟${$.random}秒执行\n`);
   for (let i = 0; i < shareCodes.length; i++) {
-    const { zd, nc, mc, ddgc, jxgc, jdzz , jdcj} = shareCodes[i];
-    await $.wait($.random);
-    zd &&
-      (await create(
-        `http://api.turinglabs.net/api/v1/jd/bean/create/${zd}/`,
-        "种豆得豆"
-      ));
-    await $.wait($.random);
-    nc &&
-      (await create(
-        `http://api.turinglabs.net/api/v1/jd/farm/create/${nc}/`,
-        "东东农场"
-      ));
-    await $.wait($.random);
-    mc &&
-      (await create(
-        `http://api.turinglabs.net/api/v1/jd/pet/create/${mc}/`,
-        "东东萌宠"
-      ));
-    await $.wait($.random);
-    ddgc &&
-      (await create(
-        `http://api.turinglabs.net/api/v1/jd/ddfactory/create/${ddgc}/`,
-        "东东工厂"
-      ));
-    await $.wait($.random);
-    jxgc &&
-      (await create(
-        `http://api.turinglabs.net/api/v1/jd/jxfactory/create/${jxgc}/`,
-        "京喜工厂"
-      ));
+    const {jdzz , jdcj} = shareCodes[i];
        await $.wait($.random);
     jdzz &&
       (await create(
