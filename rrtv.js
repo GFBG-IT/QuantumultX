@@ -9,13 +9,13 @@
 
 */
 
-const reg = /4\.\d+\.\d/g;
+const reg = /5\.\d+\.\d/g;
 const headers = JSON.parse(
-  JSON.stringify($request.headers).replace(reg, '4.16.5')
+  JSON.stringify($request.headers).replace(reg, '5.0.1')
 );
 
 const data = { headers };
 
-data.url = $request.url.replace(reg, '4.16.5');
+data.url = $request.url.replace(reg, '5.0.1');
 
-$done(data);
+ $done(data);
