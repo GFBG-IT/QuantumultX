@@ -5,7 +5,7 @@
 
 [MITM]
 
-hostname = %APPEND% itunes.apple.com,license.pdfexpert.com,buy.itunes.apple.com,api.meiyan.com
+hostname = %APPEND% itunes.apple.com,license.pdfexpert.com,buy.itunes.apple.com,api.meiyan.com,education.github.com
 
 [Script]
 
@@ -16,3 +16,5 @@ Document解锁VIP = type=http-request,pattern=^https:\/\/license\.pdfexpert\.com
 Bear熊掌记解锁VIP = type=http-request,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/bear.js
 
 美颜相机解锁VIP = type=http-request,pattern=^https:\/\/api\.meiyan\.com\/iap\/verify\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/myxj.js
+
+WorkingCopy解锁VIP = type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/workingcopy.js
