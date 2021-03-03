@@ -40,4 +40,6 @@ WPS获取Cookie = type=http-request,pattern=^https:\/\/zt.wps.cn\/2018\/docer_ch
 
 航旅纵横获取cooike = type=http-request,pattern= ^https:\/\/cloud\.umetrip\.com\/gateway\/api\/web\/rest\/polite\/app\/sign\/signpageinitdata,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/umetrip/umetrip.js
 
-飞客茶馆 = type=http-request,pattern=^https:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=getdata&.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.cookie.js
+飞客茶馆获取cooike = type=http-request,pattern=^https:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=getdata&.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.cookie.js
+
+滴滴出行APPCookie = type=http-request,pattern=^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
