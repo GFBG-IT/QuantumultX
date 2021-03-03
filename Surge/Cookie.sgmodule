@@ -1,0 +1,40 @@
+#!name=Cookie 
+#!desc=获取成功后禁用
+#!system=ios
+
+[MITM]
+hostname = %INSERT% ,*.rr.tv,*.video.qq.com,mobwsa.ximalaya.com, ifac*.iqiyi.com, api.m.jd.com,account.huami.com,wapside.189.cn:9001,wx-mini.pagoda.com.cn,credits.bz.mgtv.com,zt.wps.cn,c.tieba.baidu.com,www.52pojie.cn,e.189.cn,superapp.kiwa-tech.com, activity-1.m.duiba.com.cn,cloud.umetrip.com
+
+
+
+[Script]
+人人视频获取Cookie = type=http-request, pattern=^https:\/\/api\.rr\.tv\/user\/profile,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.cookie.js
+
+腾讯视频获取Cookie = type=http-request, pattern=^https:\/\/access.video.qq.com\/user\/auth_refresh,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
+
+喜马拉雅获取Cookie = type=http-request, pattern=^https?:\/\/.*\/mobile\-user\/homePage\/.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js
+
+爱奇艺获取Cookie = type=http-request,pattern=^https?:\/\/iface(\d)?\.iqiyi\.com\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+
+京东获取Cookie = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+小米运动获取Cookie = type=http-response,pattern=^https:\/\/account\.huami\.com\/v2\/client\/login,requires-body=1,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/xmSports.js
+
+电信营业厅获取Cookie = type=http-request,pattern=^https:\/\/wapside.189.cn:9001\/api\/home\/sign,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js,requires-body=true
+
+百果园获取Cookie = type=http-request,pattern=^https:\/\/wx-mini.pagoda.com.cn\/api\/v1\/wxmini\/signIn\/customer,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/pagoda/pagoda.cookie.js
+
+芒果TV获取Cookie = type=http-request,pattern=^https:\/\/credits.bz.mgtv.com\/user\/creditsTake,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.cookie.js
+
+WPS获取Cookie = type=http-request,pattern=^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js
+
+百度贴吧获取Cookie = type=http-request,pattern=https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
+
+航旅纵横获取Cookie = type=http-request,pattern=https:\/\/www\.52pojie\.cn\/home\.php\?,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js
+
+电信套餐查询 = type=http-request,pattern=https?:\/\/e\.189\.cn\/store\/user\/package_detail\.do,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js
+
+海底捞获取cooike = type=http-request,pattern=^https:\/\/superapp\.kiwa-tech\.com\/app\/coupon\/customerLevelShow requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Haidilao/Haidilao.js
+海底捞获取等级 = type=http-request,pattern=^https:\/\/activity-1\.m\.duiba\.com\.cn\/signactivity\/getSignInfo, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Haidilao/Haidilao.js
+
+海底捞获取等级 = type=http-request,pattern= ^https:\/\/cloud\.umetrip\.com\/gateway\/api\/web\/rest\/polite\/app\/sign\/signpageinitdata,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/umetrip/umetrip.js
