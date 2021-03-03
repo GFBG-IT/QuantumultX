@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %INSERT% ,*.rr.tv,*.video.qq.com,mobwsa.ximalaya.com, ifac*.iqiyi.com, api.m.jd.com,account.huami.com,wapside.189.cn:9001,wx-mini.pagoda.com.cn,credits.bz.mgtv.com,zt.wps.cn,c.tieba.baidu.com,www.52pojie.cn,e.189.cn,superapp.kiwa-tech.com, activity-1.m.duiba.com.cn,cloud.umetrip.com
+hostname = %INSERT% ,*.rr.tv,*.video.qq.com,mobwsa.ximalaya.com, ifac*.iqiyi.com, api.m.jd.com,account.huami.com,wapside.189.cn:9001,wx-mini.pagoda.com.cn,credits.bz.mgtv.com,zt.wps.cn,c.tieba.baidu.com,www.52pojie.cn,e.189.cn,superapp.kiwa-tech.com, activity-1.m.duiba.com.cn,cloud.umetrip.com,www.flyertea.com,
 
 
 
@@ -37,4 +37,6 @@ WPS获取Cookie = type=http-request,pattern=^https:\/\/zt.wps.cn\/2018\/docer_ch
 海底捞获取cooike = type=http-request,pattern=^https:\/\/superapp\.kiwa-tech\.com\/app\/coupon\/customerLevelShow requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Haidilao/Haidilao.js
 海底捞获取等级 = type=http-request,pattern=^https:\/\/activity-1\.m\.duiba\.com\.cn\/signactivity\/getSignInfo, script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Haidilao/Haidilao.js
 
-海底捞获取等级 = type=http-request,pattern= ^https:\/\/cloud\.umetrip\.com\/gateway\/api\/web\/rest\/polite\/app\/sign\/signpageinitdata,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/umetrip/umetrip.js
+航旅纵横获取cooike = type=http-request,pattern= ^https:\/\/cloud\.umetrip\.com\/gateway\/api\/web\/rest\/polite\/app\/sign\/signpageinitdata,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/umetrip/umetrip.js
+
+飞客茶馆 = type=http-request,pattern=^https:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=getdata&.*,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/flyertea/flyertea.cookie.js
