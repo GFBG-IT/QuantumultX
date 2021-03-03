@@ -44,6 +44,8 @@ WPS = type=cron,cronexp="10 10 * * *",wake-system=1,script-path=https://raw.gith
 
 京东物流派件提醒 = type=cron,cronexp="0 12 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdWuLiu.js
 
+京东保价 = type=cron,cronexp="15 12 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdGuaranteedPrice.js
+
 #京东活动
 
 东东农场 = type=cron,cronexp="5 6-18/6 * * *",wake-system=1,timeout=120,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_fruit.js
