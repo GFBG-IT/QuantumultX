@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %APPEND% draw.jdfcloud.com, *.amemv.com,api*-normal-c-hl.ixigua.com,mp.weixin.qq.com,trade-acs.m.taobao.com,api.m.jd.com,weixin110.qq.com,pan.baidu.com,www.google.*,vsco.co,account.wps.cn,biz.caiyunapp.com,ap*.intsig.net,api.jiaonizuocai.com, lambda.us-east-1.amazonaws.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,app.bilibili.com,api.bilibili.com,dida365.com,ticktick.com,
+hostname = %APPEND% draw.jdfcloud.com, *.amemv.com,api*-normal-c-hl.ixigua.com,mp.weixin.qq.com,trade-acs.m.taobao.com,api.m.jd.com,weixin110.qq.com,pan.baidu.com,www.google.*,vsco.co,account.wps.cn,biz.caiyunapp.com,ap*.intsig.net,api.jiaonizuocai.com, lambda.us-east-1.amazonaws.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,app.bilibili.com,api.bilibili.com,dida365.com,ticktick.com,api.gotokeep.com,api.revenuecat.com
 
 [Script]
 
@@ -62,4 +62,8 @@ drops解锁VIP = type=http-response,pattern=^https:\/\/lambda\.us-east-1\.amazon
 滴答清单VIP = type=http-response,pattern=^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/QuantumultX/File/DiDaQingDan.js
 
 Bilibili解锁1080P+ = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js
+
+KEEP解锁 = type=http-response,pattern=^https:\/\/api\.gotokeep\.com\/*,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/keep.js
+
+Noto毕竟解锁pro = type=http-response,pattern=https://api.revenuecat.com/v1/receipts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/noto.js,script-update-interval=0
 
