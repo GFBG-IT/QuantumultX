@@ -1,5 +1,5 @@
-#!name=Task任务
-#!desc=日常使用
+#!name=自用Task任务
+#!desc=日常开启使用
 #!system=ios
 
 [Script]
@@ -42,11 +42,13 @@ WPS = type=cron,cronexp="10 10 * * *",wake-system=1,script-path=https://raw.gith
 
 滴滴出行 = type=cron,cronexp="0 1,20,21 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 
-京东物流派件提醒 = type=cron,cronexp="0 12 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdWuLiu.js
+京东物流派件提醒 = type=cron,cronexp="5 12 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdWuLiu.js
 
 京东保价 = type=cron,cronexp="15 12 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdGuaranteedPrice.js
 
-来客有礼签到 = type=cron,cronexp="35 5 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js
+来客有礼签到 = type=cron,cronexp="35 12 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js
+
+ithome-签到 = type=cron,cronexp="45 12 * * *",,wake-system=true,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ithome/ithome.js
 
 #日常脚本
 
@@ -92,9 +94,9 @@ WPS = type=cron,cronexp="10 10 * * *",wake-system=1,script-path=https://raw.gith
 
 京喜工厂 = type=cron,cronexp="10 * * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_dreamFactory.js
 
-东东小窝 = type=cron,cronexp="16 0 * * *",wake-system=1,timeout=20,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_small_home.js
+东东小窝 = type=cron,cronexp="16 0 * * *",wake-system=1,timeout=120,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_small_home.js
 
-东东工厂 = type=cron,cronexp="10 * * * *",wake-system=1,timeout=20,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jdfactory.js
+东东工厂 = type=cron,cronexp="10 * * * *",wake-system=1,timeout=120,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jdfactory.js
 
 点点券 = type=cron,cronexp="10 0,20 * * *",wake-system=1,timeout=20,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_necklace.js
 
