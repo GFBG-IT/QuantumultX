@@ -1,4 +1,4 @@
-#!name=JS
+#!name=自用JS脚本模块
 #!desc=去广告&京东活动辅助&部分VIP解锁
 #!system=ios
 
@@ -21,7 +21,7 @@ hostname = %APPEND% draw.jdfcloud.com, *.amemv.com,api*-normal-c-hl.ixigua.com,m
 
 抖音去广告&水印res = type=http-response,pattern=^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js
 
-IT之家去广告 = type=http-response,pattern=https:\/\/api\.ithome\.com\/json\/(((newslist|listpage)\/news)|(slide\/index)),script-path=https://raw.githubusercontent.com/toulanboy/scripts/master/ithome_ad/ithome_ad.js,requires-body=true
+IT之家去广告 = type=http-response,pattern=https:\/\/api\.ithome\.com\/json\/(((newslist|listpage)\/news)|(slide\/index)),,requires-body=1script-path=https://raw.githubusercontent.com/toulanboy/scripts/master/ithome_ad/ithome_ad.js
 
 西瓜视频去广告 = type=http-response,pattern=https:\/\/api3-normal-c-hl\.ixigua\.com\/video\/app\/stream\/,script-path=https://gitee.com/Sunert/Scripts/raw/master/Script/xigua_ad.js
 
@@ -40,11 +40,14 @@ IT之家去广告 = type=http-response,pattern=https:\/\/api\.ithome\.com\/json\
 
 google自动翻页 = type=http-response,pattern=https?:\/\/www\.google\.([a-z.]*)\/search.*(?<!start=\d{2}|\d{3})$,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/endless.js
 
+BoxJs.net = type=http-request,pattern=^https?://boxjs.net,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
+
+
 #常用解锁VIP
 
 VSCO解锁VIP = type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
 
-WPS解锁VIP= type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/users,requires-body=1,max-size=1,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/Script/wps.js
+WPS解锁VIP= type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/users,requires-body=1,max-size=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
 彩云天气VIP = type=http-response,pattern=https://biz.caiyunapp.com/v2/user\?app_name=weather,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/ColorWeather.js
 
