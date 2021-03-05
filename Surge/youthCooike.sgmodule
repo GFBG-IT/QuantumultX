@@ -1,5 +1,5 @@
-#!name=中青看点Cooike
-#!desc=获取中青看点Cooike
+#!name=中青看点Cooike模块
+#!desc=获取中青看点Cooike,获取成功后禁用
 #!system=ios
 
 [MITM]
