@@ -1,5 +1,5 @@
-#!name=中青看点Cron任务
-#!desc=薅羊毛
+#!name=中青看点Cron模块
+#!desc=中青Cron执行
 #!system=ios
 
 [Script]
