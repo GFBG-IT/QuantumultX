@@ -21,8 +21,7 @@
   - [toulanboy](https://github.com/toulanboy/scripts/tree/master)
   - [ddgksf2013](https://github.com/ddgksf2013/Cuttlefish)
   - [songyangzz](https://github.com/songyangzz/QuantumultX/tree/master)  
-  - [ddgksf2013](https://github.com/ddgksf2013/Cuttlefish)
- 
+  
  - #### 规则
 
   - [DivineEngine](https://github.com/DivineEngine/Profiles/tree/master)  
