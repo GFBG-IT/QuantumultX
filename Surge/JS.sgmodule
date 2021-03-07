@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %APPEND% draw.jdfcloud.com, *.amemv.com,api.ithome.com,api*-normal-c-hl.ixigua.com,mp.weixin.qq.com,trade-acs.m.taobao.com,api.m.jd.com,weixin110.qq.com,pan.baidu.com,www.google.*,testflight.apple.com,vsco.co,account.wps.cn,biz.caiyunapp.com,ap*.intsig.net,api.jiaonizuocai.com, lambda.us-east-1.amazonaws.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,app.bilibili.com,api.bilibili.com,dida365.com,ticktick.com,api.gotokeep.com,api.revenuecat.com
+hostname = %APPEND% draw.jdfcloud.com, *.amemv.com,api.ithome.com,api*-normal-c-hl.ixigua.com,mp.weixin.qq.com,trade-acs.m.taobao.com,api.m.jd.com,weixin110.qq.com,pan.baidu.com,www.google.*,testflight.apple.com,biz.caiyunapp.com,ap*.intsig.net,api.jiaonizuocai.com, lambda.us-east-1.amazonaws.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,app.bilibili.com,api.bilibili.com,dida365.com,ticktick.com,api.gotokeep.com
 
 [Script]
 
@@ -28,6 +28,7 @@ IT之家去广告 = type=http-response,pattern=https:\/\/api\.ithome\.com\/json\
 
 微信去广告 = type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
+
 #常用脚本
 
 淘宝比价 = type=http-request,pattern=^http://.+/amdc/mobileDispatch,requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
@@ -47,9 +48,6 @@ TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v
 
 #常用解锁VIP
 
-VSCO解锁VIP = type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
-
-WPS解锁VIP= type=http-response,pattern=^https?:\/\/account\.wps\.cn\/api\/users,requires-body=1,max-size=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
 彩云天气VIP = type=http-response,pattern=https://biz.caiyunapp.com/v2/user\?app_name=weather,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/ColorWeather.js
 
@@ -66,6 +64,4 @@ drops解锁VIP = type=http-response,pattern=^https:\/\/lambda\.us-east-1\.amazon
 Bilibili解锁1080P+ = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js
 
 KEEP解锁 = type=http-response,pattern=^https:\/\/api\.gotokeep\.com\/*,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/keep.js
-
-Noto毕竟解锁pro = type=http-response,pattern=https://api.revenuecat.com/v1/receipts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/noto.js,script-update-interval=0
 
