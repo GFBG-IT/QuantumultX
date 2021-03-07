@@ -21,6 +21,7 @@
   - [toulanboy](https://github.com/toulanboy/scripts/tree/master)
   - [ddgksf2013](https://github.com/ddgksf2013/Cuttlefish)
   - [songyangzz](https://github.com/songyangzz/QuantumultX/tree/master)  
+  - [Choler](https://github.com/Choler/Surge) 
   
  - #### 规则
 
