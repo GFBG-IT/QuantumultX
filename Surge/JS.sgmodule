@@ -3,7 +3,7 @@
 #!system=ios
 
 [MITM]
-hostname = %APPEND% draw.jdfcloud.com, *.amemv.com,api.ithome.com,api*-normal-c-hl.ixigua.com,mp.weixin.qq.com,trade-acs.m.taobao.com,api.m.jd.com,weixin110.qq.com,pan.baidu.com,testflight.apple.com,biz.caiyunapp.com,ap*.intsig.net,api.jiaonizuocai.com, lambda.us-east-1.amazonaws.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,app.bilibili.com,api.bilibili.com,dida365.com,ticktick.com,api.gotokeep.com
+hostname = %APPEND% draw.jdfcloud.com,api.ithome.com,api*-normal-c-hl.ixigua.com,mp.weixin.qq.com,trade-acs.m.taobao.com,api.m.jd.com,weixin110.qq.com,pan.baidu.com,testflight.apple.com,biz.caiyunapp.com,ap*.intsig.net,api.jiaonizuocai.com, lambda.us-east-1.amazonaws.com,commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi,app.bilibili.com,api.bilibili.com,dida365.com,ticktick.com,api.gotokeep.com
 
 [Script]
 
@@ -18,10 +18,10 @@ hostname = %APPEND% draw.jdfcloud.com, *.amemv.com,api.ithome.com,api*-normal-c-
 
 #去广告类
 
+#  *.amemv.com
+#抖音去广告&水印req = type=http-request,pattern=^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js
 
-抖音去广告&水印req = type=http-request,pattern=^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js
-
-抖音去广告&水印res = type=http-response,pattern=^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js
+#抖音去广告&水印res = type=http-response,pattern=^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js
 
 IT之家去广告 = type=http-response,pattern=https:\/\/api\.ithome\.com\/json\/(((newslist|listpage)\/news)|(slide\/index)),,requires-body=1script-path=https://raw.githubusercontent.com/toulanboy/scripts/master/ithome_ad/ithome_ad.js
 
