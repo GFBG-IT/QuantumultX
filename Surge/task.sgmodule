@@ -132,3 +132,4 @@ Sub-Store 自动同步 = type=cron,cronexp="0 13 * * *",script-path=https://raw.
 
 京喜财富岛 = type=cron,cronexp="5 0,8,13,19 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_cfd.js
 
+京小兑 = type=cron,cronexp="30 10 * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxd.js
