@@ -5,9 +5,6 @@ DOMAIN,ifconfig.co
 DOMAIN,ip-api.com
 DOMAIN,api.ipify.org
 DOMAIN,www.shuyz.com
-DOMAIN-SUFFIX,qianji.app
-DOMAIN-SUFFIX,xxoojoke.com
-DOMAIN-SUFFIX,myqcloud.com
 DOMAIN,ad.12306.cn
 DOMAIN,gg.caixin.com
 DOMAIN,sdkapp.uve.weibo.com
@@ -19,3 +16,6 @@ DOMAIN-SUFFIX,cup.com.cn
 DOMAIN-SUFFIX,gtimg.cn
 DOMAIN-SUFFIX,pbcdci.cn
 DOMAIN-SUFFIX,jegotrip.com.cn
+DOMAIN-SUFFIX,qianji.app
+DOMAIN-SUFFIX,xxoojoke.com
+DOMAIN-SUFFIX,myqcloud.com
