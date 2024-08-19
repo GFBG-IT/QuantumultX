@@ -1,0 +1,13 @@
+IP-CIDR,114.114.114.114/32
+IP-CIDR,114.114.115.115/32
+IP-CIDR,118.89.204.198/32
+DOMAIN,ads.cup.com.cn
+DOMAIN,pingma.qq.com
+DOMAIN,data.flurry.com
+DOMAIN,ios.bugly.qq.com
+DOMAIN,ulogs.umengcloud.com
+DOMAIN,hub5idx.v6.shub.sandai.net
+DOMAIN,hub5emu.v6.shub.sandai.net
+DOMAIN,hub5btmain.v6.shub.sandai.net
+DOMAIN-SUFFIX,umeng.com
+DOMAIN-SUFFIX,jddebug.com
