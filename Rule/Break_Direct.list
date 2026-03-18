@@ -76,8 +76,30 @@ DOMAIN-SUFFIX,chinacache.net
 DOMAIN-SUFFIX,aliyuncsslb.com
 DOMAIN-SUFFIX,aliyuncs.com
 
+# > IHG
+DOMAIN-SUFFIX,forter.com
+DOMAIN-SUFFIX,ihg.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,evergage.com
+DOMAIN-SUFFIX,fullstory.com
+DOMAIN-SUFFIX,appdynamics.com
+
+# > marriott
+DOMAIN-SUFFIX,demdex.net
+DOMAIN-SUFFIX,apptentive.com
+DOMAIN-SUFFIX,emb-api.com
+DOMAIN-SUFFIX,omtrdc.net
+DOMAIN-SUFFIX,adobedc.net
+DOMAIN-SUFFIX,marriott.com
+DOMAIN-SUFFIX,inauth.com
+DOMAIN-SUFFIX,bazaarvoice.com
+
 # > 直连域名
 DOMAIN-SUFFIX,mapbox.com
 DOMAIN-SUFFIX,notion.so
+DOMAIN-SUFFIX,xiaomi.net
+DOMAIN,ipv6.shuzilm.cn
+DOMAIN,ghfast.top
+DOMAIN,api.pass2u.net
 DOMAIN,ip-api.com
 DOMAIN,apple-relay.fastly-edge.com
