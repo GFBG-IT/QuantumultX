@@ -1,3 +1,4 @@
+# > 中国CDN
 DOMAIN-SUFFIX,myqcloud.com
 DOMAIN-SUFFIX,gtimg.cn
 DOMAIN-SUFFIX,qpic.cn
@@ -74,5 +75,9 @@ DOMAIN-SUFFIX,fastweb.com.cn
 DOMAIN-SUFFIX,chinacache.net
 DOMAIN-SUFFIX,aliyuncsslb.com
 DOMAIN-SUFFIX,aliyuncs.com
-#DOMAIN,m.yhdm.io
-#DOMAIN-KEYWORD,cebbank
+
+# > 直连域名
+DOMAIN-SUFFIX,mapbox.com
+DOMAIN-SUFFIX,notion.so
+DOMAIN,ip-api.com
+DOMAIN,apple-relay.fastly-edge.com
